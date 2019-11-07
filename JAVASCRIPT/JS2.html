@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Calculo da área e circunferência</title>
+  </head>
+  <body>
+    <form class="" name="circulo" action="index.html" method="post">
+      Digite o raio: <input type="text" name="raio" value="0">
+      <input type="button" name="botao" value="OK"> <br>
+      Área do círculo : <input type="text" name="area" value="0"> <br>
+      Circunferência: <input type="text" name="circ" value="0">
+    </form>
+    <script type="text/javascript">
+    /* Objeto referenciando o botão */
+      document.circulo.botao.onclick = function(){
+         raio = document.circulo.raio.value;
+         document.circulo.area.value = (Math.PI * raio * raio).toFixed(2);
+         document.circulo.circ.value = (2 * Math.PI * raio).toFixed(2);
+      }
+    </script>
+  </body>
+</html>
